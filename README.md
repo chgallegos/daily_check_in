@@ -1,4 +1,4 @@
 # RW Dashboard
 
 ## Overview
-The purpose of this site is to provide a visual representation of the average daily emotional and physical status for patients at each house of a recovery center. 
+This site provides a tool to calculate average numbers for emotional and physical scores provided by patients each morning during "goals group". The tool is intended for a substance abuse recovery facility, and this provides a general idea of the emotional and physical status of each the three houses on a daily basis.
