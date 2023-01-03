@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Recovery Ways Mindfulness Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="grid-container">
+      <div class="item6" style="padding: 10px;">
+        <div class="BW">Brunswick West</div>
+        <div class="BE">Brunswick East</div>
+        <div class="CH">Copper Hills</div>
+      </div>
+      <div class="item2" style="font-size: 20px;">
+
+<form>
+  <div style="padding: 10px;">
+  <div style="background-color: #7f9c90; border-radius: 20px; padding: 8px;">
+    <label style="font-size: 18px; padding: 10px;">Select House</label>
+    <select class="div-toggle" data-target=".item6"> 
+      <option value="BW" data-show=".BW">Brunswick West</option>
+      <option value="BE" data-show=".BE">Brunswick East</option>
+      <option value="CH" data-show=".CH">Copper Hills</option>
+    </select>
+  </div>
+  </div>
+</form>
+
+
+      <form>
+        <div style="padding: 10px;">
+          <div style="background-color: #7f9c90; border-radius: 20px; padding: 10px;">
+            <label style="font-size: 15px; padding: 10px;">Census</label>
+              <br>
+              <input type="number" min="1" id="table-row-num" value="0" required="required" style="padding: 10px; height: 10px; width: 35px;">
+              <button id="submitButton">Submit</button>
+          </div>
+        </div> 
+    </form>
+        <div id="table-gen">     
+            <table id="resultTable" cellpadding="1" cellspacing="1" border="1">
+            </table>
+        </div>
+        <div id="sum"></div>
+        <input type=button value='Calculate Physical' onclick="CalculatePhys()"/>
+        <div id="emosum"></div>
+        <input type=button value='Calculate Emotional' onclick="CalculateEmo()"/>
+        <div></div>
+        <input type="submit" value="Load to Dashboard" onclick="takeshot();" />
+      </div>
+          <div id="screenshot" class="grid-graphs"> 
+            <div id='Physical' ><!-- Plotly chart will be drawn inside this DIV --></div>
+            <div id='Emotional'><!-- Plotly chart will be drawn inside this DIV --></div>
+        </div>  
+      </div>
+  <script  src="./script.js" defer></script>
+  
+</body>
+</html>
