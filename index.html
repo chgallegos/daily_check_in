@@ -13,10 +13,12 @@
 <body>
   <div class="grid-container">
       <div class="item6" style="padding: 10px;">
-        <div class="BW">Brunswick West</div>
-        <div class="BE">Brunswick East</div>
-        <div class="CH">Copper Hills</div>
+        <div class="BW">Recovery Ways</div>
+        <div class="BE">Recovery Ways</div>
+        <div class="CH">Recovery Ways</div>
       </div>
+
+
       <div class="item2" style="font-size: 20px;">
 
 <form>
@@ -24,9 +26,9 @@
   <div style="background-color: #7f9c90; border-radius: 20px; padding: 8px;">
     <label style="font-size: 18px; padding: 10px;">Select House</label>
     <select class="div-toggle" data-target=".item6"> 
-      <option value="BW" data-show=".BW">Brunswick West</option>
-      <option value="BE" data-show=".BE">Brunswick East</option>
-      <option value="CH" data-show=".CH">Copper Hills</option>
+      <option value="BW" data-show=".BW" >Brunswick West</option>
+      <option value="BE" data-show=".BE" >Brunswick East</option>
+      <option value="CH" data-show=".CH" >Copper Hills</option>
     </select>
   </div>
   </div>
@@ -54,11 +56,18 @@
         <div></div>
         <input type="submit" value="Load to Dashboard" onclick="takeshot();" />
       </div>
+
           <div id="screenshot" class="grid-graphs"> 
+            <div><div id="title" class="item6" style="padding: 10px;">
+              <div class="BW">Brunswick West</div>
+              <div class="BE">Brunswick East</div>
+              <div class="CH">Copper Hills</div>
+            </div></div>
             <div id='Physical' ><!-- Plotly chart will be drawn inside this DIV --></div>
             <div id='Emotional'><!-- Plotly chart will be drawn inside this DIV --></div>
         </div>  
       </div>
+      <div id="output"></div>
   <script  src="./script.js" defer></script>
   
 </body>
