@@ -23,9 +23,9 @@
   gap: 10px;
   background-color: #275c4e;
   padding: 50px;
-  margin-left: 50px;
-  margin-top: 10px;
-
+  /* margin-left: 50px;
+  margin-top: 10px; */
+margin: auto;
   
 }
 
@@ -41,9 +41,17 @@
 
 }
 
-table>tr{width: 30px;}
-table>tr input{width: 60px;}
+table>tr{width: 30px;
+margin: auto;}
+table>tr input{width: 60px;
+margin: auto;}
 
 .hide {
   display: none;
+}
+
+.Container {
+  width: 70%;
+  min-width: 500px;
+  margin: auto;
 }

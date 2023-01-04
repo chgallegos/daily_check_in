@@ -91,7 +91,7 @@ var emotionalData = [
 ];
 
 
-var layout = { width: 400, height: 250, margin: { t: 0, b: 0 } };
+var layout = { width: 300, height: 180, margin: { t: 0, b: 0 } };
 Plotly.newPlot('Emotional', emotionalData, layout);
 Plotly.newPlot('Physical', physicalData, layout);
 
